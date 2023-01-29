@@ -1,0 +1,161 @@
+*{
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+
+}
+
+img{
+  max-width: 100%;
+}
+
+header{
+  display: flex;
+  justify-content: space-between;
+  min-height: 70px;
+  background-color: #857c7c;
+  text-align: center;
+  align-items: center;
+  padding: 10px;
+}
+
+nav{
+  display: flex;
+  flex-direction: row;
+  background-color: #ffffff;
+  
+}
+
+nav a{
+  color: #20a6d8;
+  padding: 14px 20px;
+  text-decoration: none;
+  font-weight: 600;
+  padding-right: 10px;
+}
+nav a:hover{
+  color: white;
+}
+
+.row{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+aside{
+flex: 30px;
+ background-color: #bebabe;
+padding: 50px;
+ 
+
+}
+
+section{
+  flex: 70%;
+  background-color: #f8eded;
+  padding: 20px;
+
+
+}
+
+footer{
+  padding: 20px;
+  text-align: center;
+  background-color: #857c7c;
+}
+
+@media screen and (max-width: 700px){
+  header, nav, .row{
+    flex-direction: column;
+  }
+  nav{
+    padding: 10px 0px;
+  }
+
+}
+
+
+.logo{
+  display: flex;
+  align-items: center;
+}
+
+.logo img{
+  height: 50px;
+  margin-right: 10px;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+
+.container-items{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.item{
+  border-radius: 10px;
+}
+.item:hover{
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.20);
+}
+
+.item img{
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+  transition: all .5s;
+}
+
+.item figure{
+  overflow: hidden;
+}
+
+.item:hover img{
+  transform: scale(1.2);
+}
+
+.info-product{
+  padding: 15px 30px;
+  line-height: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.price{
+  font-size: 18px;
+  font-weight: 900;
+}
+
+.info-product button{
+  border: none;
+  background: none;
+  background-color: black;
+  color: white;
+  padding: 15px 10px;
+  cursor: pointer;
+}
+
+.container-menu{
+  font-size: 25px;
+  border: none;
+  background: none;
+  background-color: black;
+  color: white;
+  padding: 15px 10px;
+  cursor: pointer;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 10px;
+}
+
